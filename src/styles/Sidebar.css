@@ -4,10 +4,14 @@
   color: #aeb2b7;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding-left: 19px;
+  padding-top: 20px;
   position: relative;
   flex: 1;
-  height: 80vh;
+  /* text-align: center; */
+  /* height: 90vh; */
+
+  border-bottom-left-radius: 20px;
 }
 
 .sidebar-title {
@@ -22,6 +26,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  /* align-self: center; */
 }
 
 .nav-item {
@@ -33,14 +38,14 @@
   border-radius: 0.5rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  color: #4b5563;
+  color: #9ca3af;
 }
 
 .nav-item:hover {
   background-color: #f9fafb;
 }
 .nav-item.active {
-  background-color: #eef2ff;
+  /* background-color: #eef2ff; */
   color: #4f46e5;
 }
 
@@ -55,11 +60,30 @@
 .setting {
   display: flex;
   gap: 0.75rem;
-  position: absolute;
-  bottom: 100px;
+  /* position: absolute; */
+  /* bottom: 100px; */
+  margin-top: 80px;
   align-items: center;
 }
 
 .setting-word {
   font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    right: -240px;
+    top: 10px;
+    width: 220px;
+    height: 100vh;
+    z-index: 20;
+    transition: left 0.3s ease;
+    background-color: #f9fafb;
+  }
+
+  .sidebar.open {
+    right: 0;
+  }
 }

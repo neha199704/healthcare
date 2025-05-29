@@ -12,6 +12,10 @@ calendar-container {
   border-radius: 20px;
 }
 
+.calendar-appointments {
+  padding: 20px;
+}
+
 .calendar-day {
   display: flex;
   flex-direction: column;

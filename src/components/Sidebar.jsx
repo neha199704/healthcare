@@ -2,9 +2,9 @@ import sidebarData, { tool } from "../data/navLinks";
 import "../styles/Sidebar.css";
 import { IoMdSettings } from "react-icons/io";
 
-function Sidebar() {
+function Sidebar({ className }) {
   return (
-    <div className="sidebar">
+    <div className={className}>
       <h3 className="sidebar-title">General</h3>
       <nav className="sidebar-nav">
         {sidebarData.map((link, index) => (

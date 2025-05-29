@@ -2,9 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
 }
 
 .SimpleAppointment {
   background-color: #f7faff;
-  padding: 20px;
+  /* padding: 20px; */
+  border-bottom-right-radius: 20px;
 }

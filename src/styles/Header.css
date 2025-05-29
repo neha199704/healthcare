@@ -1,16 +1,21 @@
 .header {
   display: flex;
   align-items: center;
+
+  /* gap: 20px; */
   /* position: fixed; */
 }
 
 .logo {
   flex: 1;
-
+  padding-top: 20px;
+  padding-right: 20px;
   font-size: 1.5rem;
   font-weight: bold;
   color: #1f2937;
+  border-top-left-radius: 20px;
   background-color: #f7faff;
+  text-align: center;
 }
 
 .highlight {
@@ -36,8 +41,16 @@
   flex: 2;
   align-items: center;
   gap: 8px;
+  background-color: #f7faff;
+  padding-top: 16px;
+  border-top-right-radius: 20px;
 }
 
+.right-side-avtar {
+  padding-right: 25px;
+  display: flex;
+  align-items: center;
+}
 .search {
   position: absolute;
   left: 10px;
@@ -83,4 +96,66 @@
 
 .add {
   color: #3635a3;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .logo {
+    flex: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .center-content {
+    flex: 1 1 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .search-container {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .search-input {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .right-content {
+    flex: none;
+    gap: 6px;
+    margin-top: 10px;
+    background: none;
+  }
+
+  .bell-button,
+  .user-avatar,
+  .add {
+    padding: 5px;
+  }
+}
+
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: #1f2937;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+}
+
+h1 {
+  margin-bottom: 0;
+  padding: 0;
 }

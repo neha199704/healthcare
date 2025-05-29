@@ -2,14 +2,18 @@ import React from "react";
 import { FaBell } from "react-icons/fa";
 import "../styles/Header.css";
 import { IoSearch } from "react-icons/io5";
+import { IoMenu } from "react-icons/io5";
 import { MdAddBox } from "react-icons/md";
 
-function Header() {
+function Header({ toggleSidebar }) {
   return (
     <header className="header">
-      <h1 className="logo">
+      <button onClick={toggleSidebar} className="menu-button">
+        <IoMenu size={28} />
+      </button>
+      <div className="logo">
         <span className="highlight">Health</span>care.
-      </h1>
+      </div>
       <div className="center-content">
         <div className="search-container">
           <IoSearch className="search" />
@@ -20,8 +24,10 @@ function Header() {
         </button>
       </div>
       <div className="right-content">
-        <button className="user-avatar">👨🏻‍🦰</button>
-        <MdAddBox className="add" size={34} />
+        <div className="right-side-avtar">
+          <button className="user-avatar">👨🏻‍🦰</button>
+          <MdAddBox className="add" size={34} />
+        </div>
       </div>
     </header>
   );

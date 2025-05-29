@@ -1,5 +1,5 @@
 .app-container {
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 30px;
   padding: 20px;
   background-color: #feffff;
@@ -11,7 +11,10 @@
 }
 .dashboard-main {
   flex: 2;
+  /* align-self: baseline; */
 }
 .simple-appointment-card {
   flex: 2;
+
+  /* align-self: baseline; */
 }
