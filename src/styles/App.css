@@ -1,0 +1,17 @@
+.app-container {
+  overflow: hidden;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: #feffff;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dashboard-main {
+  flex: 2;
+}
+.simple-appointment-card {
+  flex: 2;
+}

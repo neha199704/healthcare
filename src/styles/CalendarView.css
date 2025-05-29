@@ -1,0 +1,93 @@
+calendar-container {
+  background-color: #f7faff;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.calendar {
+  display: flex;
+  gap: 10px;
+  background: #f5f8ff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 8px;
+  border-radius: 15px;
+  flex-grow: 1;
+}
+
+.selected-day {
+  background: rgba(117, 116, 255, 0.08);
+}
+
+.day-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.day-date {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.disabled-date {
+  color: #b7c1cb;
+}
+
+.time-slot {
+  font-size: 14px;
+  padding: 5px 8px;
+  border-radius: 12px;
+  margin-bottom: 6px;
+  background: transparent;
+}
+
+.selected-time {
+  background: #5d5fef;
+  color: #fff;
+  font-weight: 500;
+}
+
+.calendar-appointments {
+  display: flex;
+  gap: 10px;
+}
+
+.appointment-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.appointment-1 {
+  background-color: #3635a9;
+  color: white;
+  border-radius: 30px;
+  width: auto;
+  padding: 15px 20px;
+  flex-grow: 1;
+}
+
+.appointment-2 {
+  background-color: #dde2fa;
+  color: #302d5a;
+  border-radius: 30px;
+  width: auto;
+  padding: 15px 20px;
+  flex-grow: 2;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.doctor-name {
+  font-size: 12px;
+}

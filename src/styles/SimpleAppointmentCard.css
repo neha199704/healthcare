@@ -1,0 +1,10 @@
+.SimpleAppointmentCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.SimpleAppointment {
+  background-color: #f7faff;
+  padding: 20px;
+}

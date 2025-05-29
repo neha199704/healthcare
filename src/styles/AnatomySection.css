@@ -1,0 +1,125 @@
+.anatomy-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.anatomy-image {
+  background-color: #f7faff;
+  position: relative;
+}
+.anatomy-image img {
+  max-width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.health-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 25px;
+}
+
+.health-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #f7faff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.emoji {
+  font-size: 20px;
+}
+
+.emoji.red {
+  color: #ef4444;
+}
+
+.emoji.gray {
+  color: #4b5563;
+}
+
+.card-header h3 {
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.card-date {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.progress-bar {
+  width: 100%;
+  background: #e5e7eb;
+  height: 8px;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 8px;
+  border-radius: 9999px;
+}
+
+.progress-fill.red {
+  background-color: #993837;
+}
+
+.progress-fill.green {
+  background-color: #77c5b7;
+}
+
+.progress-fill.orange {
+  background-color: #fb7559;
+}
+
+.details {
+  justify-content: end;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  color: #6b7280;
+}
+
+.search-arrow {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #90969e;
+  font-size: 24px;
+}
+
+.heart {
+  position: absolute;
+  top: 90px;
+  right: -20px;
+  background-color: #3332a8;
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.leg {
+  position: absolute;
+  bottom: 130px;
+  left: -20px;
+  background-color: #05e0f4;
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 10px;
+}

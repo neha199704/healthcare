@@ -1,0 +1,12 @@
+.center-content-dashboard {
+  display: flex;
+  justify-content: space-around;
+
+  align-items: center;
+  gap: 91px;
+}
+
+.img {
+  width: 500px;
+  height: 500px;
+}
